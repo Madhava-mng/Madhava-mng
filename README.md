@@ -1,16 +1,12 @@
-### Hi there 👋
 
-<!--
-**Madhava-mng/Madhava-mng** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+- I’m Madhava-mng
+- I known python,ruby,bash,nodejs
+- and html,css,js too but not interested
+- 👯 I’m looking to collaborate on pentester
+- 🤔 I’m looking for help with pro-pt
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- 📫 How to reach me: alformint@gmail.com, or enumerate to get more.
+- [pypi](https://pypi.org/Madhava-mng)
+- [gem](https://rubygems.org/profiles/Madhava-mng)
+- 😠 I never like people who are pollute my earth
+- Need perfect teammate. but where ?
