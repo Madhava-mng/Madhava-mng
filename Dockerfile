@@ -1,20 +1,24 @@
-# Use the official Node.js image as the base image
-FROM node:18
+# Stage 1: Build the React application 
+FROM node:14 as build
 
-# Set the working directory in the container
 WORKDIR /app
 
-# Copy the application files into the working directory
-COPY . /app
+COPY package*.json ./
 
-# Install the application dependencies
 RUN npm install
 
-# Build the React application
+COPY . .
+
 RUN npm run build
 
-# Expose port 3000
-EXPOSE 3000
+# Stage 2: Serve the React application using Nginx
+FROM nginx:stable-alpine
 
-# Define the entry point for the container
-CMD ["npm", "start"]
+COPY --from=build /app/build /usr/share/nginx/html
+
+# Copy the default nginx.conf provided by the docker image
+COPY nginx/nginx.conf /etc/nginx/conf.d/default.conf
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
